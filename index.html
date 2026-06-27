@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bae Jinwoo | AI Researcher & Engineer</title>
+    <meta
+      name="description"
+      content="Bae Jinwoo's AI research and engineering portfolio: medical AI, machine unlearning, Kaggle, CAD/DXF systems, and applied data products."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top">Bae Jinwoo</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Researcher & Engineer</p>
+          <h1>낯선 도메인을 데이터와 시스템으로 번역하는 엔지니어</h1>
+          <p class="lead">
+            의료 CDM, 병리 이미지, Machine Unlearning, Kaggle 대회, CAD/DXF 기반 견적 시스템,
+            운영 대시보드까지. 저는 새로운 데이터를 이해하고, 검증 가능한 AI 실험과 실제 제품 흐름으로
+            연결하는 일을 해왔습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="https://github.com/bgw4399">GitHub</a>
+            <a class="secondary" href="assets/Bae_Jinwoo_CV.pdf">CV PDF</a>
+            <a class="secondary" href="mailto:bgw4399@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Project highlights">
+          <img src="assets/electrical_routing_result.png" alt="Electrical routing result visual" />
+          <img src="assets/stock_dashboard.png" alt="Stock analysis dashboard visual" />
+          <img src="assets/kaggle_machine_unlearning_2nd.png" alt="Kaggle machine unlearning award evidence" />
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Highlights">
+        <div>
+          <strong>PoPETs 2026</strong>
+          <span>Machine Unlearning accepted paper</span>
+        </div>
+        <div>
+          <strong>2nd Place</strong>
+          <span>NeurIPS 2023 Machine Unlearning Challenge</span>
+        </div>
+        <div>
+          <strong>Medical AI</strong>
+          <span>CDM, pathology, clinical prediction</span>
+        </div>
+        <div>
+          <strong>Applied IT</strong>
+          <span>DXF routing, dashboards, MCP/agents</span>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Research</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span class="date">2025.10 - Present</span>
+            <h3>Korea University College of Medicine</h3>
+            <p>
+              MICU 저나트륨혈증 환자의 전해질 반응 및 수액치료 예측 연구를 진행하고 있습니다.
+              임상 변수 정의, 결측/치료 시점 해석, feature set 구성, 평가 기준 및 해석 가능성 검토를 맡고 있습니다.
+            </p>
+          </article>
+          <article>
+            <span class="date">2024.11 - 2025.12</span>
+            <h3>Kim Kwangsoo Lab</h3>
+            <p>
+              의료 CDM, 병리 이미지, 임상 데이터 기반 AI 연구를 수행했습니다. Bento/CDM Explorer,
+              H&E/IHC registration, LightGlue/SuperGlue matching, cell segmentation, 단백질 변이 기반 MCP 서버를 다뤘습니다.
+            </p>
+          </article>
+          <article>
+            <span class="date">2023.08 - 2024.02</span>
+            <h3>Kookmin University ML&PR Lab</h3>
+            <p>
+              Machine Unlearning에서 gradient similarity 기반 weight initialization을 연구했습니다.
+              pruning, KD, poisoning, retain/forget 성능과 privacy metric을 실험해 PoPETs 2026 채택 논문으로 이어졌습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section band">
+        <div class="section-head">
+          <p class="eyebrow">Builds</p>
+          <h2>Selected Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <h3>Bento/CDM Explorer</h3>
+            <p>
+              연구자가 의료 CDM 데이터를 탐색하고 자연어/논문 입력에서 코호트 조건을 만들 수 있도록 돕는
+              의료 연구지원 플랫폼입니다.
+            </p>
+            <ul>
+              <li>OMOP CDM concept 연결 가능한 cohort JSON 구조화</li>
+              <li>질환, 약제, 검사, 기간 조건 추출</li>
+              <li>7명 팀에서 AI 파트 기획 및 구현</li>
+            </ul>
+          </article>
+          <article class="project">
+            <h3>NVIDIA Nemotron Reasoning</h3>
+            <p>
+              LoRA/PEFT reasoning adapter 대회 실험입니다. verifier audit, failure taxonomy, adapter diversity,
+              TIES/DARE/model-soup 전략을 정리했습니다.
+            </p>
+            <ul>
+              <li>Equation Transformation 병목 분석</li>
+              <li>D4 numeric solver audit: selected precision 1.0</li>
+              <li>독립 model family 확보 전략 수립</li>
+            </ul>
+          </article>
+          <article class="project visual-card">
+            <img src="assets/electrical_routing_result.png" alt="Electrical routing overlay" />
+            <h3>Electrical DWG/DXF Estimation</h3>
+            <p>
+              이안건설엔지니어링과 협업 중인 전기공사 도면 기반 견적/배선 경로 최적화 앱입니다.
+              DXF 좌표계, overlay, patch bbox, Hanan Grid/Steiner routing을 정리했습니다.
+            </p>
+          </article>
+          <article class="project visual-card">
+            <img src="assets/stock_dashboard.png" alt="Stock dashboard screenshot" />
+            <h3>Stock News Analysis Desk</h3>
+            <p>
+              뉴스와 가격 데이터를 함께 보는 로컬 분석 대시보드입니다. 뉴스 원문, 판단 근거, 호재/악재/중립 분류를
+              남겨 사람이 더 빠르게 검토하도록 돕습니다.
+            </p>
+          </article>
+          <article class="project">
+            <h3>Cosmetics Sample Dispatch System</h3>
+            <p>
+              샘플 발송 Excel 데이터를 SQLite에 적재하고 웹 대시보드, 보고서 생성, 룰 기반 질의응답을 제공하는
+              내부 운영형 데모입니다.
+            </p>
+            <ul>
+              <li>민감한 연락처/주소 데이터는 public repo 제외</li>
+              <li>Generated Excel reports and filtering workflow</li>
+              <li>No external GPT API dependency</li>
+            </ul>
+          </article>
+          <article class="project">
+            <h3>NeuroGolf 2026</h3>
+            <p>
+              task-level graph/ONNX profiling과 compact graph-surgeon blending을 실험했습니다.
+              score progression 로그 기준 graph surgeon score 6405.61까지 추적했습니다.
+            </p>
+          </article>
+          <article class="project">
+            <h3>CAFA6 Protein Function Prediction</h3>
+            <p>
+              ESM/ProtBERT-style embeddings, ontology features, stacking, XGBoost/scikit-learn 기반
+              단백질 기능 예측 실험을 정리했습니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Proof</p>
+          <h2>Awards & Publications</h2>
+        </div>
+        <div class="award-layout">
+          <div class="award-list">
+            <article>
+              <h3>PoPETs 2026 Accepted Paper</h3>
+              <p>Gradient similarity 기반 weight initialization을 활용한 Machine Unlearning 연구.</p>
+            </article>
+            <article>
+              <h3>NeurIPS 2023 Machine Unlearning Challenge - 2nd Place</h3>
+              <p>Private 데이터 일반화와 retain/forget 균형을 중심으로 팀 실험 전략을 검증했습니다.</p>
+            </article>
+            <article>
+              <h3>Best Poster / Capstone Awards</h3>
+              <p>의료 CDM 플랫폼, 저나트륨혈증 연구, Bento 캡스톤 프로젝트 성과를 포스터와 전시회에서 인정받았습니다.</p>
+            </article>
+          </div>
+          <img src="assets/kmucs_capstone_award.jpg" alt="KMUCS capstone excellence award evidence" />
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>
+          의료 AI, 데이터 시스템, Kaggle-style experimentation, AI 에이전트/MCP 기반 업무 자동화에 관심이 있습니다.
+        </p>
+        <a href="mailto:bgw4399@gmail.com">bgw4399@gmail.com</a>
+      </section>
+    </main>
+  </body>
+</html>
